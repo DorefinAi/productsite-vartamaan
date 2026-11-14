@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vartmaan AI · Assignment desk intake</title>
+  <meta name="description" content="Vartmaan AI puts every reporter's story from WhatsApp, Outlook and the Reporter app into one assignment-desk inbox, keeps the slug as typed, tags the district and finds the footage on the FTP. People make every call.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#141310">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..700&display=swap">
+  <link rel="stylesheet" href="assets/css/edition.css">
+  <script>(function(){try{var force=new URLSearchParams(location.search).has('motion');if((!force&&matchMedia('(prefers-reduced-motion: reduce)').matches)||innerHeight<501)return;document.documentElement.classList.add('has-intro')}catch(e){}})();</script>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <script src="assets/js/edition.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed" crossorigin="anonymous" defer></script>
+  <script src="assets/js/intro.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <section class="intro" id="intro" data-intro aria-label="Intro: from the desk app to today's edition">
+    <div class="intro__stage">
+      <div class="intro__paper" aria-hidden="true"></div>
+      <div class="intro__poster" aria-hidden="true"><img src="assets/screens/vartmaan-inbox-footage-clean.webp" width="2880" height="1800" alt="" loading="lazy" decoding="async"></div>
+      <canvas class="intro__canvas" aria-hidden="true"></canvas>
+      <p class="sr-only">A short scrolling intro, shown as an animation: the Vartmaan AI intake inbox on a tablet, with sample data, turns into a sheet of paper, crumples into a ball and unfolds as today's edition of this front page. Nothing in it is missing from the page below.</p>
+      <div class="intro__caption" aria-hidden="true">
+        <p class="intro__cap mono" data-intro-cap>00 · THE DESK APP</p>
+        <p class="intro__note" data-intro-note>The assignment desk's inbox, with a reporter's story and its footage.</p>
+      </div>
+    </div>
+  </section>
+
+  <header class="masthead paper" id="top">
+    <div class="wrap">
+      <p class="dateline mono">
+        <span>[ JAIPUR ]</span>
+        <span>[ <time data-today datetime="2026-11-11">WED 11 NOV 2026</time> ]</span>
+        <span>[ EDITION 01 ]</span>
+      </p>
+      <div class="nameplate">
+        <p class="ear ear--l">Assignment-desk intake for the Hindi newsroom</p>
+        <p class="nameplate__title"><a class="nameplate__name" href="index.html" aria-current="page">Vartmaan AI</a><span class="nameplate__hi" lang="hi">वर्तमान</span></p>
+        <p class="ear ear--r"><span class="live-dot" aria-hidden="true"></span>Live on the assignment desk</p>
+      </div>
+    </div>
+  </header>
+  <nav class="sectionnav" aria-label="Main">
+    <div class="wrap sectionnav__inner">
+      <a class="sectionnav__brand" href="index.html" aria-label="Vartmaan AI, front page"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="currentColor"/><path d="M8 13h20v4h-5l10 27 10-27h-5v-4h18v4h-4L37 53h-6L16 17h-8z" fill="#F4F0E6"/></svg></a>
+      <ul class="sectionnav__links">
+        <li><a href="#main" aria-current="page">Home</a></li>
+        <li><a href="/how-it-works" target="_top">How it works</a></li>
+        <li><a href="/proof" target="_top">Proof</a></li>
+        <li><a href="/contact" target="_top">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <section class="ticker ink" aria-label="Breaking: product facts and sample stories">
+      <div class="ticker__track" data-ticker tabindex="0">
+        <ul class="ticker__list">
+          <li><span class="tag">BREAKING</span>One inbox for WhatsApp, Outlook and the Reporter app</li>
+          <li><span class="tag tag--plain">SAMPLE STORY</span><span class="mono">Pali:</span> <span lang="hi">सोजत में ट्रक और बस की भिड़ंत, 12 घायल</span></li>
+          <li><span class="tag">BREAKING</span>Texts, photos and voice notes sent within 90 seconds become one item</li>
+          <li><span class="tag tag--plain">SAMPLE STORY</span><span class="mono">Kota:</span> <span lang="hi">कोटा में डेंगू के 40 नए मरीज़</span></li>
+          <li><span class="tag">BREAKING</span>Footage found on the FTP. Vartmaan never changes the reporter's footage</li>
+          <li><span class="tag tag--plain">SAMPLE STORY</span><span class="mono">Barmer:</span> <span lang="hi">बाड़मेर रिफ़ाइनरी का काम 85% पूरा</span></li>
+          <li><span class="tag">BREAKING</span>48 districts tagged from the reporter's own city token</li>
+          <li><span class="tag tag--plain">SAMPLE STORY</span><span class="mono">Udaipur:</span> <span lang="hi">उदयपुर में पर्यटन सीज़न शुरू</span></li>
+        </ul>
+      </div>
+      <button class="ticker__toggle mono" type="button" data-ticker-toggle aria-pressed="false" hidden>Pause</button>
+    </section>
+
+    <article class="lead paper" aria-labelledby="lead-title">
+      <div class="wrap lead__grid">
+        <div class="lead__copy">
+        <p class="kicker">For the input desk</p>
+          <h1 class="lead__title" id="lead-title">Every reporter's file reaches one desk, with its slug and its footage. People make every call.</h1>
+          <p class="byline mono">From the assignment desk <span aria-hidden="true">/</span> Jaipur</p>
+          <p class="deck">Stories arrive on WhatsApp, in Outlook and through the Reporter app. Vartmaan AI gathers them into one inbox, keeps the reporter's slug as typed, tags the district, and finds the footage the reporter already put on the newsroom FTP.</p>
+          <p class="lead__body">It never changes the reporter's footage; the only place it writes is its own folder. Nothing reaches Octopus, the newsroom system, until a person on the desk approves it.</p>
+          <div class="lead__actions">
+            <a class="btn btn--red" href="#film">Follow one story</a>
+            <a class="btn btn--line" href="#film">Watch it work</a>
+          </div>
+        </div>
+        <div class="lead__photo">
+          <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-inbox-footage-clean.webp" width="2880" height="1800" fetchpriority="high" alt="The Vartmaan intake inbox: a list of reporters' stories on the left; on the right the Udaipur reporter's story with its slug, tagged Udaipur, and a Footage panel marked Found with three video files; Edit story, Reject and Approve at the bottom.">
+              <figcaption><span class="credit mono">Sample data / Intake</span>The Udaipur reporter's story in the inbox: slug, district, and footage marked Found on the FTP, above Edit story, Reject and Approve. The sender's number is blurred.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </article>
+
+    <section class="desk-proof ink" id="desk-proof" aria-labelledby="desk-proof-title">
+      <div class="wrap desk-proof__grid">
+        <div class="desk-proof__copy">
+          <p class="kicker">One story, kept intact</p>
+          <h2 class="desk-proof__title" id="desk-proof-title">From a reporter's file to the desk's next decision</h2>
+          <p class="desk-proof__lede">Vartmaan does the sorting work around the story. The editor still decides what moves.</p>
+          <ol class="desk-proof__states" data-proof-states>
+            <li><button type="button" class="desk-proof__state is-active" data-proof-state="received"><span class="desk-proof__num">01</span><span><b>Received</b><small>WhatsApp, Outlook, or Reporter app</small></span></button></li>
+            <li><button type="button" class="desk-proof__state" data-proof-state="matched"><span class="desk-proof__num">02</span><span><b>Matched</b><small>Slug, district, and footage stay together</small></span></button></li>
+            <li><button type="button" class="desk-proof__state" data-proof-state="reviewed"><span class="desk-proof__num">03</span><span><b>Reviewed</b><small>Edit story, reject, or approve</small></span></button></li>
+            <li><button type="button" class="desk-proof__state" data-proof-state="fed"><span class="desk-proof__num">04</span><span><b>Fed</b><small>Approved stories reach Octopus</small></span></button></li>
+          </ol>
+        </div>
+        <figure class="desk-proof__screen">
+          <img data-proof-image src="assets/screens/vartmaan-inbox-footage-clean.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="Vartmaan intake inbox with a reporter story and footage status.">
+          <figcaption><span class="credit mono" data-proof-caption>Received / intake</span><span data-proof-copy>The story arrives with its source, slug, and first review state.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="surfaces paper" aria-labelledby="surfaces-title">
+      <div class="wrap">
+        <div class="surfaces__head">
+          <p class="kicker">The desk in practice</p>
+          <h2 class="surfaces__title" id="surfaces-title">One place to see what arrived, what matched, and what can move.</h2>
+        </div>
+        <div class="surfaces__feature">
+          <figure class="surfaces__hero"><img src="assets/screens/vartmaan-feed.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="Vartmaan Feed for Octopus with approved stories, Hindi headlines, slugs, districts, and state switches."><figcaption><span class="credit mono">Feed for Octopus</span>Approved stories stay visible as a working queue, not a hidden export.</figcaption></figure>
+          <div class="surfaces__note"><span class="mono">THE OUTPUT DESK</span><h3>Approval is the handoff.</h3><p>Every item keeps its headline, slug, district, and review state until the editor sends it to Octopus.</p><a class="more" href="#film">Watch the handoff</a></div>
+        </div>
+        <div class="surfaces__split">
+          <figure><img src="assets/screens/vartmaan-detail-status-chips.webp" width="1450" height="488" loading="lazy" decoding="async" alt="Vartmaan footage statuses Found, Waiting, Not found, and Picked by hand with Re-check and Pick folder controls."><figcaption><span class="credit mono">FOOTAGE</span>Found, Waiting, Not found, Picked by hand.</figcaption></figure>
+          <figure><img src="assets/screens/vartmaan-access-roles.webp" width="1450" height="900" loading="lazy" decoding="async" alt="Vartmaan users and roles screen showing role-based access controls."><figcaption><span class="credit mono">ACCESS</span>Five roles and fifteen permission keys.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="film ink" id="film" aria-labelledby="film-title"
+      data-film data-frames="assets/frames/vartmaan" data-count="118" data-fps="5.47" data-duration="21.6">
+      <div class="film__stage">
+        <div class="wrap film__grid">
+          <header class="film__head">
+            <p class="film__slug mono"><span class="live-dot" aria-hidden="true"></span>Wire / Vartmaan AI / assignment desk</p>
+            <h2 class="film__title" id="film-title">How a reporter's story reaches the desk with its footage</h2>
+          </header>
+          <div class="screen">
+            <canvas class="screen__canvas" role="img" aria-label="The Vartmaan AI film, scrubbed by scrolling. Each step is described in the wire log."></canvas>
+            <span class="screen__bug mono" aria-hidden="true">VARTMAAN AI</span>
+            <span class="screen__tc mono" aria-hidden="true" data-tc>00:00.0 / 00:21.6</span>
+          </div>
+          <ol class="wirelog" aria-label="Wire log: the Vartmaan AI film, step by step, in film timecode">
+            <li class="wirelog__item" data-at="0">
+              <img class="wirelog__still" src="assets/frames/vartmaan/f024.webp" width="1280" height="720" loading="lazy" decoding="async" alt="A reporter files a story: the slug 141026_UDR_PARYATAN_SEASON_AV_REPORTER, read as 14 Oct 2026, Udaipur, tourist season, AV, with Footage marked Found.">
+              <p class="wirelog__time mono"><time datetime="PT0S">00:00</time> <span aria-hidden="true">/</span> STORY FILED</p>
+              <p class="wirelog__text">A reporter files a story. The slug <span class="mono slugtype">141026_UDR_PARYATAN_SEASON_AV_REPORTER</span> is kept as typed and read as Udaipur, tourist season, AV.</p>
+            </li>
+            <li class="wirelog__item" data-at="5">
+              <img class="wirelog__still" src="assets/frames/vartmaan/f036.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Title card: Vartmaan AI, assignment-desk intake for newsrooms.">
+              <p class="wirelog__time mono"><time datetime="PT5S">00:05</time> <span aria-hidden="true">/</span> VARTMAAN AI</p>
+              <p class="wirelog__text">Vartmaan AI: assignment-desk intake for newsrooms.</p>
+            </li>
+            <li class="wirelog__item" data-at="8">
+              <img class="wirelog__still" src="assets/frames/vartmaan/f058.webp" width="1280" height="720" loading="lazy" decoding="async" alt="WhatsApp, Outlook and Reporter app chips above the words: One inbox for the desk.">
+              <p class="wirelog__time mono"><time datetime="PT8S">00:08</time> <span aria-hidden="true">/</span> ONE INBOX</p>
+              <p class="wirelog__text">WhatsApp, Outlook and the Reporter app go into one inbox. Pieces sent within 90 seconds become one item, and mail is checked every 60 seconds.</p>
+            </li>
+            <li class="wirelog__item" data-at="13">
+              <img class="wirelog__still" src="assets/frames/vartmaan/f080.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Finds the footage already on the FTP: a Footage panel marked Found, with the folder path and three files.">
+              <p class="wirelog__time mono"><time datetime="PT13S">00:13</time> <span aria-hidden="true">/</span> FOOTAGE FOUND</p>
+              <p class="wirelog__text">It finds the footage the reporter already put on the FTP. It scans every 5 minutes and waits up to 4 hours.</p>
+            </li>
+            <li class="wirelog__item" data-at="16">
+              <p class="wirelog__time mono"><time datetime="PT16S">00:16</time> <span aria-hidden="true">/</span> READ-ONLY</p>
+              <p class="wirelog__text">Read-only on the reporter's footage: it never changes the reporter's footage; the only place it writes is its own folder.</p>
+            </li>
+            <li class="wirelog__item" data-at="18">
+              <img class="wirelog__still" src="assets/frames/vartmaan/f100.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Edit story, Reject and Approve buttons above the progress line Received, Media, Review, FTP folder, RSS feed.">
+              <p class="wirelog__time mono"><time datetime="PT18S">00:18</time> <span aria-hidden="true">/</span> DESK DECIDES</p>
+              <p class="wirelog__text">The desk edits, rejects or approves. The story moves along one line: Received, Media, Review, FTP folder, RSS feed.</p>
+            </li>
+            <li class="wirelog__item" data-at="20">
+              <img class="wirelog__still" src="assets/frames/vartmaan/f112.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Feed for Octopus, with FLASH, UPDATE and KILL labels, under the completed progress line.">
+              <p class="wirelog__time mono"><time datetime="PT20S">00:20</time> <span aria-hidden="true">/</span> FEED FOR OCTOPUS</p>
+              <p class="wirelog__text">Approved stories reach Octopus as a feed, with FLASH, UPDATE and KILL.</p>
+            </li>
+          </ol>
+          <div class="rail" role="group" aria-label="Jump to a step in the film">
+            <div class="rail__line" aria-hidden="true"><span class="rail__fill"></span></div>
+            <ol class="rail__steps">
+              <li><button type="button" data-jump="0"><span class="rail__n" aria-hidden="true">1</span><span class="rail__label">Filed</span></button></li>
+              <li><button type="button" data-jump="5"><span class="rail__n" aria-hidden="true">2</span><span class="rail__label">Title</span></button></li>
+              <li><button type="button" data-jump="8"><span class="rail__n" aria-hidden="true">3</span><span class="rail__label">Inbox</span></button></li>
+              <li><button type="button" data-jump="13"><span class="rail__n" aria-hidden="true">4</span><span class="rail__label">Footage</span></button></li>
+              <li><button type="button" data-jump="16"><span class="rail__n" aria-hidden="true">5</span><span class="rail__label">Read-only</span></button></li>
+              <li><button type="button" data-jump="18"><span class="rail__n" aria-hidden="true">6</span><span class="rail__label">Decide</span></button></li>
+              <li><button type="button" data-jump="20"><span class="rail__n" aria-hidden="true">7</span><span class="rail__label">Feed</span></button></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers paper" aria-labelledby="numbers-title">
+      <div class="wrap">
+        <h2 class="rulehead" id="numbers-title">By the numbers</h2>
+        <p class="numbers__note">Figures as Vartmaan AI runs today, set like the market page.</p>
+        <div class="numbers__grid">
+          <table class="board">
+            <caption>Intake and footage</caption>
+            <thead><tr><th scope="col">Code</th><th scope="col" class="num">Figure</th><th scope="col">What it measures</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">VRT.SRC</th><td class="num">3</td><td>Sources into one inbox: WhatsApp, Outlook, Reporter app</td></tr>
+              <tr><th scope="row">VRT.MRG</th><td class="num">90 s</td><td>Window that merges texts, photos and voice notes</td></tr>
+              <tr><th scope="row">VRT.MAIL</th><td class="num">60 s</td><td>Mail check</td></tr>
+              <tr><th scope="row">VRT.KIND</th><td class="num">4</td><td>Item kinds: story, press release, day plan, not a story</td></tr>
+              <tr><th scope="row">VRT.DST</th><td class="num">48</td><td>Districts tagged from the city token</td></tr>
+              <tr><th scope="row">VRT.FTP</th><td class="num">5 min</td><td>FTP footage scan</td></tr>
+              <tr><th scope="row">VRT.WAIT</th><td class="num">4 h</td><td>Longest wait for footage</td></tr>
+              <tr><th scope="row">VRT.DAY</th><td class="num">±1 day</td><td>Day folders checked around the story's date</td></tr>
+              <tr><th scope="row">VRT.STAT</th><td class="num">5</td><td>Footage statuses</td></tr>
+            </tbody>
+          </table>
+          <table class="board">
+            <caption>Desk and access</caption>
+            <thead><tr><th scope="col">Code</th><th scope="col" class="num">Figure</th><th scope="col">What it measures</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">VRT.TYPE</th><td class="num">10</td><td>Story types</td></tr>
+              <tr><th scope="row">VRT.REV</th><td class="num">6</td><td>Review states</td></tr>
+              <tr><th scope="row">VRT.ROLE</th><td class="num">5</td><td>Roles</td></tr>
+              <tr><th scope="row">VRT.KEY</th><td class="num">15</td><td>Permission keys</td></tr>
+              <tr><th scope="row">VRT.LOCK</th><td class="num">10 / 15 min</td><td>Failed logins before lockout</td></tr>
+              <tr><th scope="row">VRT.UPL</th><td class="num">500 MB</td><td>Upload limit; larger files go by FTP</td></tr>
+              <tr><th scope="row">VRT.APP</th><td class="num">20</td><td>Files per report in the Reporter app</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon ink" id="colophon" tabindex="-1">
+    <div class="wrap">
+      <div class="colophon__top">
+        <p class="colophon__eyebrow mono">VARTMAAN AI / ASSIGNMENT DESK</p>
+        <p class="colophon__name">Keep the story moving.</p>
+      </div>
+      <div class="colophon__grid">
+        <div>
+          <h2 class="colophon__head mono">Talk to the desk</h2>
+          <p class="colophon__fine">See how Vartmaan fits the way your newsroom already receives, checks, and approves stories.</p>
+          <a class="colophon__mail" href="mailto:arathore@dorefinai.com">arathore@dorefinai.com</a>
+        </div>
+        <nav aria-label="Footer">
+          <h2 class="colophon__head mono">On this page</h2>
+          <ul class="colophon__links">
+            <li><a href="#main" aria-current="page">Home</a></li>
+            <li><a href="/how-it-works" target="_top">How it works</a></li>
+            <li><a href="/proof" target="_top">Proof</a></li>
+            <li><a href="/contact" target="_top">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="colophon__base mono"><span>Vartmaan AI / Jaipur / Edition 01</span><span>Made with Dorefin AI · <a href="mailto:arathore@dorefinai.com">arathore@dorefinai.com</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>

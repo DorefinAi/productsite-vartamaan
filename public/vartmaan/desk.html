@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Vartmaan works</title>
+  <meta name="description" content="One story followed through Vartmaan AI: filing, the intake inbox and its 90-second merge, slug and folder, footage matching, district tagging, the story editor, and Approve into the Octopus feed.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#141310">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..700&display=swap">
+  <link rel="stylesheet" href="assets/css/edition.css">
+
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <script src="assets/js/edition.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <header class="masthead paper masthead--inside" id="top">
+    <div class="wrap">
+      <p class="dateline mono">
+        <span>[ JAIPUR ]</span>
+        <span>[ <time data-today datetime="2026-11-11">WED 11 NOV 2026</time> ]</span>
+        <span>[ SECTION B / THE DESK ]</span>
+      </p>
+      <div class="nameplate">
+        <p class="ear ear--l">Section B: The Desk, how it works</p>
+        <p class="nameplate__title"><a class="nameplate__name" href="index.html">Vartmaan AI</a><span class="nameplate__hi" lang="hi">वर्तमान</span></p>
+        <p class="ear ear--r"><span class="live-dot" aria-hidden="true"></span>Live on the assignment desk</p>
+      </div>
+    </div>
+  </header>
+  <nav class="sectionnav" aria-label="Main">
+    <div class="wrap sectionnav__inner">
+      <a class="sectionnav__brand" href="index.html" aria-label="Vartmaan AI, front page"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="currentColor"/><path d="M8 13h20v4h-5l10 27 10-27h-5v-4h18v4h-4L37 53h-6L16 17h-8z" fill="#F4F0E6"/></svg></a>
+      <ul class="sectionnav__links">
+        <li><a href="index.html">Front<span class="nav-long">&nbsp;page</span></a></li>
+        <li><a href="desk.html" aria-current="page"><span class="nav-long">The&nbsp;</span>Desk</a></li>
+        <li><a href="features.html">Inside<span class="nav-long">&nbsp;pages</span></a></li>
+        <li><a href="editorial.html">Editorial</a></li>
+        <li><a href="letters.html">Letters</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <header class="pagehead ink">
+      <div class="wrap">
+        <p class="folio mono"><span>Section B / The Desk</span><span>How it works</span></p>
+        <div class="pagehead__grid">
+          <div>
+            <h1 class="pagehead__title">One story, from the reporter's phone to the Octopus feed</h1>
+            <p class="pagehead__deck">Follow a single file through Vartmaan AI: the Udaipur reporter's tourist-season story, <span lang="hi">उदयपुर में पर्यटन सीज़न शुरू</span>. Every screen below runs on sample data.</p>
+          </div>
+          <nav class="contents" aria-label="The route, in seven steps">
+            <p class="contents__head mono">The route, in seven steps</p>
+            <ol>
+              <li><a href="#filing"><span class="mono">1</span><span>Filing</span></a></li>
+              <li><a href="#inbox"><span class="mono">2</span><span>The intake inbox</span></a></li>
+              <li><a href="#slug"><span class="mono">3</span><span>Slug and folder</span></a></li>
+              <li><a href="#footage"><span class="mono">4</span><span>Footage matching</span></a></li>
+              <li><a href="#district"><span class="mono">5</span><span>District tagging</span></a></li>
+              <li><a href="#editor"><span class="mono">6</span><span>The story editor</span></a></li>
+              <li><a href="#approve"><span class="mono">7</span><span>Approve into the Octopus feed</span></a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="step paper" id="filing" aria-labelledby="filing-title">
+      <div class="wrap step__grid step__grid--phone">
+        <div class="step__text">
+          <span class="step__no mono">Step 1 of 7 / Filing</span>
+          <h2 class="step__title" id="filing-title">The reporter files the way they already do</h2>
+          <p class="step__deck">WhatsApp, Outlook or the Reporter app. Three sources, and nothing new to learn.</p>
+          <div class="prose prose--dropcap">
+            <p>The Udaipur reporter sends a photo and a few lines on WhatsApp. A bureau mails a press note; another reporter uploads a package through the Reporter app. All three land in the same inbox on the assignment desk.</p>
+            <p>Outlook is checked every 60 seconds. The Reporter app takes up to 20 files in one report. Uploads are capped at 500 MB; anything bigger goes by FTP instead.</p>
+            <p>The FTP is not a filing channel. Reporters put their footage there, as they always have, and Vartmaan finds it later.</p>
+          </div>
+        </div>
+        <div class="step__media">
+            <figure class="newsphoto newsphoto--phone">
+              <img src="assets/screens/vartmaan-mobile-inbox.webp" width="1170" height="2532" loading="lazy" decoding="async" alt="The intake list on a phone: filters for All sources, WhatsApp and Outlook, then stories from the Bhilwara stringer, Jodhpur reporter, Barmer bureau, Udaipur reporter and others, each with a Hindi headline.">
+              <figcaption><span class="credit mono">Sample data / Intake on a phone</span>The intake list on a phone. Senders are shown by role and place; the small badge marks WhatsApp, Outlook or the Reporter app.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="step ink" id="inbox" aria-labelledby="inbox-title">
+      <div class="wrap step__grid">
+        <div class="step__text">
+          <span class="step__no mono">Step 2 of 7 / The intake inbox</span>
+          <h2 class="step__title" id="inbox-title">Ninety seconds make one item</h2>
+          <p class="step__deck">Texts, photos and voice notes sent within 90 seconds of each other become a single item for the desk.</p>
+          <div class="prose">
+            <p>Reporters rarely send a story in one message: a photo, then the text, then a voice note. Vartmaan joins the pieces that arrive within 90 seconds into one item, so the desk reads one story, not four fragments.</p>
+            <p>Each item is sorted as a story, a press release, a day plan or not a story. The default view shows stories only; the rest stay one click away in the same menu.</p>
+          </div>
+        </div>
+        <div class="step__media">
+            <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-item-kinds-clean.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The inbox with the item-kinds menu open: Stories 16, Press releases 1, Day plans 1, Not a story 1. Behind it, the Udaipur reporter's story with its footage marked Found.">
+              <figcaption><span class="credit mono">Sample data / The intake inbox</span>The item-kinds menu: Stories, Press releases, Day plans and Not a story. Stories is the default. The sender's number is blurred.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="step paper" id="slug" aria-labelledby="slug-title">
+      <div class="wrap step__grid">
+        <div class="step__text">
+          <span class="step__no mono">Step 3 of 7 / Slug and folder</span>
+          <h2 class="step__title" id="slug-title">The slug is kept exactly as the reporter typed it</h2>
+          <p class="step__deck">The slug is the story's name everywhere: in the inbox, on its folder and in the feed.</p>
+          <div class="prose">
+            <p>Reporters type a slug in a fixed pattern, <span class="mono slugtype">DDMMYY_CITY_SUBJECT_TYPE_REPORTER</span>. Vartmaan keeps it as typed and reads it: in <span class="mono slugtype">091126_UDR_PARYATAN_SEASON_AV_REPORTER</span>, 091126 is the date, UDR is Udaipur, PARYATAN_SEASON is the subject and AV is the story type.</p>
+            <p>If the same slug arrives twice, the second one gets <span class="mono">_2</span> at the end, so two stories never share a name.</p>
+            <p>Each approved story gets a folder named after its slug. That folder is Vartmaan's own, and it is the only place Vartmaan writes. The desk can rename or move Vartmaan's own story folders.</p>
+          </div>
+        </div>
+        <div class="step__media">
+            <div class="photos--pair"><figure class="newsphoto">
+              <img src="assets/screens/vartmaan-inbox-repeat-slug-clean.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The Jaipur reporter's story in the inbox with the slug 091126_JPR_SMS_HOSPITAL_AV_REPORTER_2, tagged Jaipur, and its footage marked Found.">
+              <figcaption><span class="credit mono">Sample data / Repeat slug</span>A repeat slug: the reporter sent the same slug again, so the desk sees it with _2 at the end. The sender's number is blurred.</figcaption>
+            </figure><figure class="newsphoto">
+              <img src="assets/screens/vartmaan-ftp.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The FTP folders page: seven folders, one per approved story, each named by its slug, with the district and a Rename or move button.">
+              <figcaption><span class="credit mono">Sample data / FTP folders</span>One folder per approved story, named by its slug and sorted by district and date. The FTP address is the app's built-in sample.</figcaption>
+            </figure></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step ink" id="footage" aria-labelledby="footage-title">
+      <div class="wrap step__grid">
+        <div class="step__text">
+          <span class="step__no mono">Step 4 of 7 / Footage matching</span>
+          <h2 class="step__title" id="footage-title">The footage finds the story</h2>
+          <p class="step__deck">Vartmaan reads the newsroom FTP and matches the reporter's footage to the slug, without touching it.</p>
+          <div class="prose">
+            <p>The matcher looks in the district's FTP folder, whatever its date folders are called, and checks the day folders one day either side. It matches on the exact slug, then on a prefix, then on loose files. A fuzzy match counts only when the date, the reporter and the type all agree.</p>
+            <p>Footage is often late. Vartmaan scans every 5 minutes and waits up to 4 hours. Each story shows one of five statuses: Waiting, Found, Not found, Picked by hand or Not checked.</p>
+            <p>When the match is wrong or missing, the desk presses Re-check, or Pick folder to choose the folder by hand. Either way, Vartmaan never changes the reporter's footage.</p>
+          </div>
+        </div>
+        <div class="step__media">
+            <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-inbox-footage-clean.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The Udaipur reporter's story with a Footage panel marked Found: the FTP path ending in the slug, and three files with sizes and times.">
+              <figcaption><span class="credit mono">Sample data / Footage found</span>Found: the folder path ends in the story's slug, with three files, 285.1 MB in all. The list keeps updating while files can still arrive. The sender's number is blurred.</figcaption>
+            </figure>
+            <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-inbox-waiting-clean.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The Jodhpur reporter's story with a Footage panel marked Waiting until 13:56: Vartmaan is still looking on the FTP for a folder that matches the slug.">
+              <figcaption><span class="credit mono">Sample data / Footage waiting</span>Waiting: the footage is not on the FTP yet, so Vartmaan keeps looking for a folder that matches the slug. The sender's number is blurred.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="step paper" id="district" aria-labelledby="district-title">
+      <div class="wrap step__grid">
+        <div class="step__text">
+          <span class="step__no mono">Step 5 of 7 / District tagging</span>
+          <h2 class="step__title" id="district-title">The district comes from the reporter's city token</h2>
+          <p class="step__deck">Forty-eight districts, read from the code the reporter already types.</p>
+          <div class="prose">
+            <p>The city token in a slug can be written many ways: <span class="mono">AJM03</span>, <span class="mono">BAL 2</span>, or the city's name in Hindi. Vartmaan maps it to one of 48 districts, so the desk can filter the inbox by district and each folder lands in the right place.</p>
+            <p>Here the Ajmer reporter typed <span class="mono">AJM03</span> and the story is tagged Ajmer. Its footage was picked by hand, and the panel says so.</p>
+          </div>
+        </div>
+        <div class="step__media">
+            <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-inbox-picked-by-hand-clean.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The Ajmer reporter's story with the slug 091126_AJM03_URS_TRAFFIC_AV_REPORTER, tagged Ajmer (AJM), and a Footage panel marked Picked by hand with two files.">
+              <figcaption><span class="credit mono">Sample data / District tag</span>AJM03 is read as Ajmer. The footage panel shows Picked by hand, with the folder the desk chose. The sender's number is blurred.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="step ink" id="editor" aria-labelledby="editor-title">
+      <div class="wrap step__grid">
+        <div class="step__text">
+          <span class="step__no mono">Step 6 of 7 / The story editor</span>
+          <h2 class="step__title" id="editor-title">The desk edits the story</h2>
+          <p class="step__deck">A plain editor with the fields the newsroom system needs.</p>
+          <div class="prose">
+            <p>Edit story opens the reporter's text in a form: reporter, headline, story text, location, category, priority and slug. The desk corrects, rewrites and fills the gaps. The words are the reporter's and the desk's; Vartmaan does not write the story.</p>
+            <p>Then the desk decides: Approve, Reject, or Move back to review. Stories carry one of 10 story types and sit in one of 6 review states.</p>
+          </div>
+        </div>
+        <div class="step__media">
+            <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-inbox-edit.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The story editor: Reporter, Headline, Story text, Location, Category, Priority and Slug fields filled in for the Udaipur tourist-season story, with Done, Reject and Approve at the bottom.">
+              <figcaption><span class="credit mono">Sample data / Story editor</span>The story editor, with the Udaipur story's headline and text in Hindi and the slug in its own field.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="step paper" id="approve" aria-labelledby="approve-title">
+      <div class="wrap step__grid">
+        <div class="step__text">
+          <span class="step__no mono">Step 7 of 7 / Approve into the Octopus feed</span>
+          <h2 class="step__title" id="approve-title">Approve, and the story enters the Octopus feed</h2>
+          <p class="step__deck">Approved stories reach the newsroom system as a feed, with FLASH, UPDATE and KILL.</p>
+          <div class="prose">
+            <p>Approve waits until the story's files are on the FTP, then adds the story to the feed for Octopus, with a Hindi byline. An entry can go out as a FLASH, be followed by an UPDATE, or be taken back with a KILL.</p>
+            <p>Each story shows where it is on one line:</p>
+            <ol class="route" aria-label="Progress line">
+              <li>Received</li><li>Media</li><li>Review</li><li>FTP folder</li><li>RSS feed</li>
+            </ol>
+            <p class="flags" aria-label="Feed flags"><span class="tag">FLASH</span><span class="tag tag--plain">UPDATE</span><span class="tag tag--plain">KILL</span></p>
+            <p>Octopus reads the feed. Nothing reaches it until a person on the desk has pressed Approve.</p>
+            <p><a class="more" href="features.html">Continued in Inside pages</a></p>
+          </div>
+        </div>
+        <div class="step__media">
+            <figure class="newsphoto">
+              <img src="assets/screens/vartmaan-feed.webp" width="2880" height="1800" loading="lazy" decoding="async" alt="The Feed for Octopus page: seven entries, each a Hindi headline with its slug, district, category and the time it was added, and a switch to take it out of the feed.">
+              <figcaption><span class="credit mono">Sample data / Feed for Octopus</span>The feed Octopus reads. Each approved story is one entry; switching an entry off takes it out of the feed without deleting its FTP folder.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon ink" id="colophon" tabindex="-1">
+    <div class="wrap">
+      <p class="colophon__name">Vartmaan AI</p>
+      <div class="colophon__grid">
+        <div>
+          <h2 class="colophon__head mono">Write in</h2>
+          <p class="colophon__fine">Questions about Vartmaan AI are answered on the letters page, with the address to write to.</p>
+          <a class="more" href="letters.html#contact">Letters and contact</a>
+        </div>
+        <nav aria-label="Footer">
+          <h2 class="colophon__head mono">Pages</h2>
+          <ul class="colophon__links">
+            <li><a href="index.html">Front page</a></li>
+            <li><a href="desk.html" aria-current="page">The Desk</a></li>
+            <li><a href="features.html">Inside pages</a></li>
+            <li><a href="editorial.html">Editorial</a></li>
+            <li><a href="letters.html">Letters</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="colophon__head mono">Credits</h2>
+          <p class="colophon__fine">Video music: "Happy Beats / Business Moves Vol. 9" by Sascha Ende (ende.app), <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a>. Sound effects: Kenney (CC0).</p>
+          <p class="colophon__fine">Every screen on this site shows sample data. Sample phone numbers are blurred.</p>
+        </div>
+      </div>
+      <p class="colophon__base mono"><span>Vartmaan AI / Jaipur / Edition 01</span><span>Made by Dorefin AI · <a href="mailto:arathore@dorefinai.com">arathore@dorefinai.com</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>
