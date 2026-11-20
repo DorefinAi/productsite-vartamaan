@@ -203,7 +203,7 @@ main:focus { outline: none; }
 }
 .sectionnav__inner { display: flex; align-items: center; gap: 16px; height: var(--nav-h); }
 .sectionnav__brand { display: inline-flex; align-items: center; flex: none; width: 30px; height: 44px; }
-.sectionnav__brand svg { width: 30px; height: 30px; }
+.sectionnav__wordmark { font: 700 .68rem/1 var(--f-mono); letter-spacing: -.02em; }
 .sectionnav__links {
   display: flex; gap: 4px; margin-left: auto;
   overflow-x: auto; scrollbar-width: none;
